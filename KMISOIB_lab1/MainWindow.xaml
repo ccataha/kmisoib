@@ -1,0 +1,77 @@
+﻿<Window x:Class="KMiSOIB_lab.Lab1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KMiSOIB_lab"
+        mc:Ignorable="d"
+        Title="Лабораторная работа №1" Height="559.5" Width="816.5">
+    <Grid Background="LightCoral">
+        <Label Content="Задание 1:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Сообщение:" HorizontalAlignment="Left" Margin="20,43,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Message1TB" HorizontalAlignment="Left" Height="23" Margin="106,47,0,0" TextWrapping="Wrap" Text="КРИПТОГРАФИЯ" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Шифровка:" HorizontalAlignment="Left" Margin="25,72,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Encrypted1TB" HorizontalAlignment="Left" Height="23" Margin="106,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Расшифровка:" HorizontalAlignment="Left" Margin="13,98,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Decrypted1TB" HorizontalAlignment="Left" Height="23" Margin="106,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="Proceed1" Content="Выполнить" HorizontalAlignment="Left" Margin="106,15,0,0" VerticalAlignment="Top" Width="76" Height="23" Click="Proceed1_Click"/>
+        <Label Content="Задание 2:" HorizontalAlignment="Left" Margin="247,13,0,0" VerticalAlignment="Top"/>
+        <Label Content="Сообщение:" HorizontalAlignment="Left" Margin="238,50,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Message2TB" HorizontalAlignment="Left" Height="24" Margin="320,47,0,0" TextWrapping="Wrap" Text="crypto" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Шифровка:" HorizontalAlignment="Left" Margin="243,74,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Encrypted2TB" HorizontalAlignment="Left" Height="24" Margin="320,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Расшифровка:" HorizontalAlignment="Left" Margin="227,103,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Decrypted2TB" HorizontalAlignment="Left" Height="24" Margin="320,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"/>
+        <Button x:Name="Proceed2" Content="Выполнить" HorizontalAlignment="Left" Margin="320,13,0,0" VerticalAlignment="Top" Width="76" Height="24" Click="Proceed2_Click"/>
+        <Label Content="Задание 3:" HorizontalAlignment="Left" Margin="439,11,0,0" VerticalAlignment="Top"/>
+        <Label Content="Сообщение:" HorizontalAlignment="Left" Margin="438,41,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Message3TB" HorizontalAlignment="Left" Height="22" Margin="520,45,0,0" TextWrapping="Wrap" Text="abcde" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Шифровка:" HorizontalAlignment="Left" Margin="443,72,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Encrypted3TB" HorizontalAlignment="Left" Height="22" Margin="520,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Расшифровка:" HorizontalAlignment="Left" Margin="427,100,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Decrypted3TB" HorizontalAlignment="Left" Height="22" Margin="520,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"/>
+        <Button x:Name="Proceed3" Content="Выполнить" HorizontalAlignment="Left" Margin="520,10,0,0" VerticalAlignment="Top" Width="76" Height="22" Click="Proceed3_Click"/>
+        <Label Content="Задание 4:" HorizontalAlignment="Left" Margin="25,173,0,0" VerticalAlignment="Top"/>
+        <Label Content="Сообщение:" HorizontalAlignment="Left" Margin="16,212,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Message4TB" HorizontalAlignment="Left" Height="24" Margin="101,216,0,0" TextWrapping="Wrap" Text="idiot" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Шифровка:" HorizontalAlignment="Left" Margin="21,245,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Encrypted4TB" HorizontalAlignment="Left" Height="24" Margin="101,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Расшифровка:" HorizontalAlignment="Left" Margin="5,276,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Decrypted4TB" HorizontalAlignment="Left" Height="24" Margin="101,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"/>
+        <Button x:Name="Proceed4" Content="Выполнить" HorizontalAlignment="Left" Margin="98,175,0,0" VerticalAlignment="Top" Width="76" Height="24" Click="Proceed4_Click"/>
+        <Label Content="Задание 5:" HorizontalAlignment="Left" Margin="260,173,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.578,0.756"/>
+        <Label Content="Сообщение:" HorizontalAlignment="Left" Margin="260,216,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Message5TB" HorizontalAlignment="Left" Height="22" Margin="352,216,0,0" TextWrapping="Wrap" Text="секрет" VerticalAlignment="Top" Width="57"/>
+        <Label Content="Шифровка:" HorizontalAlignment="Left" Margin="260,271,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Encrypted5TB" HorizontalAlignment="Left" Height="22" Margin="352,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Расшифровка:" HorizontalAlignment="Left" Margin="249,309,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Decrypted5TB" HorizontalAlignment="Left" Height="22" Margin="352,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"/>
+        <Button x:Name="Proceed5" Content="Выполнить" HorizontalAlignment="Left" Margin="333,175,0,0" VerticalAlignment="Top" Width="76" Height="22" Click="Proceed5_Click"/>
+        <Label Content="Задание 6:" HorizontalAlignment="Left" Margin="479,174,0,0" VerticalAlignment="Top"/>
+        <Label Content="Сообщение:" HorizontalAlignment="Left" Margin="485,216,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Message6TB" HorizontalAlignment="Left" Height="54" Margin="581,202,0,0" TextWrapping="Wrap" Text="Pbatenghyngvbaf! Vg'f n Pnrfne pvcure!" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Расшифровка:" HorizontalAlignment="Left" Margin="485,271,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Decrypted6TB" HorizontalAlignment="Left" Height="54" Margin="581,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"/>
+        <Button x:Name="Proceed6" Content="Выполнить" HorizontalAlignment="Left" Margin="552,173,0,0" VerticalAlignment="Top" Width="76" Height="22" Click="Proceed6_Click"/>
+        <Label Content="Задание 7:" HorizontalAlignment="Left" Margin="20,372,0,0" VerticalAlignment="Top"/>
+        <Label Content="Сообщение:" HorizontalAlignment="Left" Margin="24,409,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Message7TB" HorizontalAlignment="Left" Height="22" Margin="101,413,0,0" TextWrapping="Wrap" Text="abcd" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Шифровка:" HorizontalAlignment="Left" Margin="29,432,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Encrypted7TB" HorizontalAlignment="Left" Height="22" Margin="101,436,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Расшифровка:" HorizontalAlignment="Left" Margin="8,459,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Decrypted7TB" HorizontalAlignment="Left" Height="22" Margin="101,463,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"/>
+        <Button x:Name="Proceed7" Content="Выполнить" HorizontalAlignment="Left" Margin="106,372,0,0" VerticalAlignment="Top" Width="76" Height="22" Click="Proceed7_Click"/>
+        <Label Content="Смещение:" HorizontalAlignment="Left" Margin="502,335,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Offset6TB" HorizontalAlignment="Left" Height="22" Margin="584,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="13"/>
+        <Label Content="Ключ:" HorizontalAlignment="Left" Margin="295,245,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Key5TB" HorizontalAlignment="Left" Height="22" Margin="352,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57" Text="автора"/>
+
+        <Button x:Name="iButton1" Content="i" HorizontalAlignment="Left" Margin="187,16,0,0" VerticalAlignment="Top" Width="23" Height="22" Click="iButton1_Click"/>
+        <Button x:Name="iButton2" Content="i" HorizontalAlignment="Left" Margin="401,16,0,0" VerticalAlignment="Top" Width="23" Height="22" Click="iButton2_Click"/>
+        <Button x:Name="iButton3" Content="i" HorizontalAlignment="Left" Margin="605,10,0,0" VerticalAlignment="Top" Width="23" Height="22" Click="iButton3_Click"/>
+        <Button x:Name="iButton4" Content="i" HorizontalAlignment="Left" Margin="179,175,0,0" VerticalAlignment="Top" Width="23" Height="22" Click="iButton4_Click"/>
+        <Button x:Name="iButton5" Content="i" HorizontalAlignment="Left" Margin="414,175,0,0" VerticalAlignment="Top" Width="23" Height="22" Click="iButton5_Click"/>
+        <Button x:Name="iButton6" Content="i" HorizontalAlignment="Left" Margin="642,175,0,0" VerticalAlignment="Top" Width="23" Height="22" Click="iButton6_Click"/>
+        <Button x:Name="iButton7" Content="i" HorizontalAlignment="Left" Margin="198,372,0,0" VerticalAlignment="Top" Width="23" Height="22" Click="iButton7_Click"/>
+    </Grid>
+</Window>

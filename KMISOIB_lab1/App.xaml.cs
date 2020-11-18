@@ -21,12 +21,12 @@ namespace KMiSOIB_lab
         {
             InitializeComponent();
         }
-        private void Task1()
+        private void Task1() //шифр со сдвигом
         {
             string message = Message1TB.Text;
             string encryptedMsg = "";
             string decryptedMsg = "";
-            int offset = 5;
+            int offset = 4;
 
             for (int i = 0; i < message.Length; i++)
                 encryptedMsg += message[(i + offset) % message.Length];
@@ -38,11 +38,11 @@ namespace KMiSOIB_lab
             Decrypted1TB.Text = decryptedMsg;
         }
 
-        private void Task2()
+        private void Task2() //подстановочный шифр (сдвиг в оффсете на 10)
         {
             string message = Message2TB.Text;
             char[] table = message.ToCharArray();
-            int offset = 18;
+            int offset = 10;
 
             for (int i = 0; i < table.Length; i++)
                 table[i] = (char)(table[i] + offset);
@@ -55,7 +55,7 @@ namespace KMiSOIB_lab
             Decrypted2TB.Text = string.Join("", table);
         }
 
-        private void Task3()
+        private void Task3() //Однозвучный подстановочный шифр
         {
             string message = Message3TB.Text;
             string encryptedMsg = "";
@@ -63,11 +63,11 @@ namespace KMiSOIB_lab
             int index = 0;
 
             var dict = new Dictionary<char, int[]>();
-            dict.Add('с', new int[] { 7 });
-            dict.Add('т', new int[] { 5 });
-            dict.Add('а', new int[] { 8, 9 });
-            dict.Add('к', new int[] { 4 });
-            dict.Add('н', new int[] { 1 });
+            dict.Add('a', new int[] { 10 });
+            dict.Add('b', new int[] { 5 });
+            dict.Add('c', new int[] { 8, 9 });
+            dict.Add('d', new int[] { 4 });
+            dict.Add('e', new int[] { 1 });
 
             foreach (var ch in message)
             {
@@ -84,155 +84,14 @@ namespace KMiSOIB_lab
             Decrypted3TB.Text = decryptedMsg;
         }
 
-        private void _Task4()
-        {
-            string message = Message4TB.Text;
-           // string encryptedMsh = "";
-           // string decryptedMsg = "";
-
-            const int m = 5;
-            char[,] matrix = new char[m, m]
-            {
-                { 'w', 'h', 'e', 'a', 't' },
-                { 's', 'o', 'n', 'b', 'c' },
-                { 'd', 'f', 'g', 'i', 'k' },
-                { 'l', 'm', 'p', 'q', 'r' },
-                { 'u', 'v', 'x', 'y', 'z' }
-            };
-
-            string tmp = "";
-
-            for (int i = 0; i < message.Length; i += 2)
-            {
-                for (int j = i; j < i + 2; j++)
-                {
-                    if (message[j] == ' ')
-                    {
-                        tmp += 'x';
-                        continue;
-                    }
-                    tmp += message[j];
-                }
-                //tmp += " ";
-            }
-            Console.WriteLine(tmp);
-
-            string encrypted = "";
-            for (int i = 0; i < tmp.Length - 1; i += 2)
-            {
-                int[] a = findIndexes(tmp[i]);
-                int[] b = findIndexes(tmp[i + 1]);
-                int[] c = new int[2];
-                int[] d = new int[2];
-
-                if (a[0] == b[0])
-                {
-                    c[0] = a[0]; c[1] = a[1] + 1;
-                    d[0] = b[0]; d[1] = b[1] + 1;
-                    encrypted += matrix[c[0], c[1]];
-                    encrypted += matrix[d[0], d[1]];
-                }
-                else if (a[0] - 1 == b[0])
-                {
-                    c[0] = a[0] - 1; c[1] = a[1];
-                    d[0] = b[0] + 1; d[1] = b[1];
-                    encrypted += matrix[d[0], d[1]];
-                    encrypted += matrix[c[0], c[1]];
-                }
-                else if (a[1] == b[1])
-                {
-                    c[0] = a[0]; c[1] = a[1] - 1;
-                    d[0] = b[0]; d[1] = b[1] - 1;
-                    encrypted += matrix[d[0], d[1]];
-                    encrypted += matrix[c[0], c[1]];
-                }
-                else if (a[1] - 1 == b[1])
-                {
-                    c[0] = a[0]; c[1] = a[1] - 1;
-                    d[0] = b[0]; d[1] = b[1] + 1;
-                    encrypted += matrix[c[0], c[1]];
-                    encrypted += matrix[d[0], d[1]];
-                }
-                else if (a[1] + 3 == b[1])
-                {
-                    c[0] = a[0]; c[1] = a[1] + 1;
-                    d[0] = b[0]; d[1] = b[1] - 1;
-                    encrypted += matrix[c[0], c[1]];
-                    encrypted += matrix[d[0], d[1]];
-                }
-            }
-
-            string decrypted = "";
-            for (int i = 0; i < encrypted.Length - 1; i += 2)
-            {
-                int[] a = findIndexes(encrypted[i]);
-                int[] b = findIndexes(encrypted[i + 1]);
-                int[] c = new int[2];
-                int[] d = new int[2];
-
-                if (a[0] == b[0])
-                {
-                    c[0] = a[0]; c[1] = a[1] - 1;
-                    d[0] = b[0]; d[1] = b[1] - 1;
-                    decrypted += matrix[c[0], c[1]];
-                    decrypted += matrix[d[0], d[1]];
-                }
-                else if (a[0] - 1 == b[0])
-                {
-                    c[0] = a[0] - 1; c[1] = a[1];
-                    d[0] = b[0] + 1; d[1] = b[1];
-                    encrypted += matrix[d[0], d[1]];
-                    encrypted += matrix[c[0], c[1]];
-                   
-                }
-                else if (a[1] == b[1])
-                {
-                    c[0] = a[0]; c[1] = a[1] + 1;
-                    d[0] = b[0]; d[1] = b[1] + 1;
-                    decrypted += matrix[d[0], d[1]];
-                    decrypted += matrix[c[0], c[1]];
-                }
-                else if (a[1] + 1 == b[1])
-                {
-                    c[0] = a[0]; c[1] = a[1] + 1;
-                    d[0] = b[0]; d[1] = b[1] - 1;
-                    decrypted += matrix[c[0], c[1]];
-                    decrypted += matrix[d[0], d[1]];
-                }
-                else if (a[1] - 3 == b[1])
-                {
-                    c[0] = a[0]; c[1] = a[1] - 1;
-                    d[0] = b[0]; d[1] = b[1] + 1;
-                    decrypted += matrix[c[0], c[1]];
-                    decrypted += matrix[d[0], d[1]];
-                }
-
-            }
-
-            Console.WriteLine(encrypted);
-            Console.WriteLine(decrypted);
-
-            int[] findIndexes(char ch)
-            {
-                for (int i = 0; i < m; i++)
-                {
-                    for (int j = 0; j < m; j++)
-                    {
-                        if (matrix[i, j] == ch) return new int[] { i, j };
-                    }
-                }
-
-                return new int[] { -1, -1 };
-            }
-        }
-        private void Task4()
+        private void Task4() //полиграммный подстановочный шифр
         {
             string message = Message4TB.Text.Replace(' ', 'x');
             string encryptedMsg = "";
             string decryptedMsg = "";
             const int m = 5;
             char[,] matrix = new char[m, m]
-            {
+               {
                 { 'a', 'i', 'e', 'n', 'b' },
                 { 'f', 'k', 'd', 'x', 'w' },
                 { 'v', 'l', 'c', 'o', 'r' },
@@ -268,7 +127,7 @@ namespace KMiSOIB_lab
                 return new int[] { -1, -1 };
             }
         }
-        private void Task5()
+        private void Task5() //полиалфавитный подстановочный шифр
         {
             string message = Message5TB.Text;
             string key = Key5TB.Text;
@@ -279,16 +138,16 @@ namespace KMiSOIB_lab
             int rightBorder = 'я';
             int size = rightBorder - leftBorder + 1;
 
-            for(int i = 0; i < message.Length; i++)
+            for (int i = 0; i < message.Length; i++)
             {
                 if (!char.IsLetter(message[i]))
                 {
                     encryptedMsg += message[i];
                     continue;
                 }
-                int m = char.ToLower(message[i]) % size;
-                int k = char.ToLower(key[i]) % size;
-                char newChar = (char)((m + k) % leftBorder % size + leftBorder);
+                int m = char.ToLower(message[i]) % size; //6
+                int k = char.ToLower(key[i]) % size; //1
+                char newChar = (char)((m + k) % leftBorder % size + leftBorder); // 7%1%33+1 
                 if (char.IsUpper(message[i])) newChar = char.ToUpper(newChar);
                 encryptedMsg += newChar;
             }
@@ -389,6 +248,20 @@ namespace KMiSOIB_lab
             Task6(offset);
         }
         private void Proceed7_Click(object sender, RoutedEventArgs e) { Task7(); }
+
+        
+        private void iButton1_Click(object sender, RoutedEventArgs e) {
+            string message = "You did not enter a server name. Cancel this operation?";
+            string caption = "Достоинства и недостатки шифра Перестановки";
+            MessageBox.Show(message, caption);
+        }
+        private void iButton2_Click(object sender, RoutedEventArgs e) { Task2(); }
+        private void iButton3_Click(object sender, RoutedEventArgs e) { Task3(); }
+        private void iButton4_Click(object sender, RoutedEventArgs e) { Task4(); }
+        private void iButton5_Click(object sender, RoutedEventArgs e) { Task5(); }
+        private void iButton6_Click(object sender, RoutedEventArgs e) { }
+        private void iButton7_Click(object sender, RoutedEventArgs e) { }
+
     }
 
 }

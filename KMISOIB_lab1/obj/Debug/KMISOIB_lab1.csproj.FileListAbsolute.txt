@@ -1,0 +1,15 @@
+D:\всякое\4 Курс\Крипта\KMiSOIB_lab-master\1lb\KMISOIB_lab1\KMISOIB_lab1\bin\Debug\KMISOIB_lab1.exe.config
+D:\всякое\4 Курс\Крипта\KMiSOIB_lab-master\1lb\KMISOIB_lab1\KMISOIB_lab1\bin\Debug\KMISOIB_lab1.exe
+D:\всякое\4 Курс\Крипта\KMiSOIB_lab-master\1lb\KMISOIB_lab1\KMISOIB_lab1\bin\Debug\KMISOIB_lab1.pdb
+D:\всякое\4 Курс\Крипта\KMiSOIB_lab-master\1lb\KMISOIB_lab1\KMISOIB_lab1\obj\Debug\KMISOIB_lab1.csprojAssemblyReference.cache
+D:\всякое\4 Курс\Крипта\KMiSOIB_lab-master\1lb\KMISOIB_lab1\KMISOIB_lab1\obj\Debug\MainWindow.g.cs
+D:\всякое\4 Курс\Крипта\KMiSOIB_lab-master\1lb\KMISOIB_lab1\KMISOIB_lab1\obj\Debug\App.g.cs
+D:\всякое\4 Курс\Крипта\KMiSOIB_lab-master\1lb\KMISOIB_lab1\KMISOIB_lab1\obj\Debug\KMISOIB_lab1_MarkupCompile.cache
+D:\всякое\4 Курс\Крипта\KMiSOIB_lab-master\1lb\KMISOIB_lab1\KMISOIB_lab1\obj\Debug\KMISOIB_lab1_MarkupCompile.lref
+D:\всякое\4 Курс\Крипта\KMiSOIB_lab-master\1lb\KMISOIB_lab1\KMISOIB_lab1\obj\Debug\MainWindow.baml
+D:\всякое\4 Курс\Крипта\KMiSOIB_lab-master\1lb\KMISOIB_lab1\KMISOIB_lab1\obj\Debug\KMISOIB_lab1.g.resources
+D:\всякое\4 Курс\Крипта\KMiSOIB_lab-master\1lb\KMISOIB_lab1\KMISOIB_lab1\obj\Debug\KMISOIB_lab1.Properties.Resources.resources
+D:\всякое\4 Курс\Крипта\KMiSOIB_lab-master\1lb\KMISOIB_lab1\KMISOIB_lab1\obj\Debug\KMISOIB_lab1.csproj.GenerateResource.cache
+D:\всякое\4 Курс\Крипта\KMiSOIB_lab-master\1lb\KMISOIB_lab1\KMISOIB_lab1\obj\Debug\KMISOIB_lab1.csproj.CoreCompileInputs.cache
+D:\всякое\4 Курс\Крипта\KMiSOIB_lab-master\1lb\KMISOIB_lab1\KMISOIB_lab1\obj\Debug\KMISOIB_lab1.exe
+D:\всякое\4 Курс\Крипта\KMiSOIB_lab-master\1lb\KMISOIB_lab1\KMISOIB_lab1\obj\Debug\KMISOIB_lab1.pdb

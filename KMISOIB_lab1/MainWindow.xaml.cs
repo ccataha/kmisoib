@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace KMiSOIB_lab
+namespace KMISOIB_lab1
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -22,18 +22,7 @@ namespace KMiSOIB_lab
     {
         public MainWindow()
         {
-            InitializeComponent();
+            //InitializeComponent();
         }
-
-        private void Lb1_Button_Click(object sender, RoutedEventArgs e) { new Lab1().Show(); }
-        private void Lb2_Button_Click(object sender, RoutedEventArgs e) { new Lab2().Show(); }
-        
-        private void Lb3_Button_Click(object sender, RoutedEventArgs e) { new Lab3().Show(); }
-        private void Lb4_Button_Click(object sender, RoutedEventArgs e) { new Lab4().Show(); }
-        private void Exit_Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
     }
 }

@@ -1,7 +1,7 @@
-﻿<Application x:Class="KMiSOIB_lab.App"
+﻿<Application x:Class="KMISOIB_lab1.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:KMiSOIB_lab"
+             xmlns:local="clr-namespace:KMISOIB_lab1"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

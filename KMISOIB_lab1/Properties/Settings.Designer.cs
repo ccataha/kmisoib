@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace KMiSOIB_lab.Properties
+namespace KMISOIB_lab1.Properties
 {
 
 
