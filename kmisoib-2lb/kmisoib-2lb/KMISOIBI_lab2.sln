@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMISOIBI_lab2", "KMISOIBI_lab2\KMISOIBI_lab2.csproj", "{66E319F4-EF92-49FE-BD2A-1FEB4E297869}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66E319F4-EF92-49FE-BD2A-1FEB4E297869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66E319F4-EF92-49FE-BD2A-1FEB4E297869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66E319F4-EF92-49FE-BD2A-1FEB4E297869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66E319F4-EF92-49FE-BD2A-1FEB4E297869}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB8DB999-710F-4247-B44D-94FAC1659A7C}
+	EndGlobalSection
+EndGlobal
